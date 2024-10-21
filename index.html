@@ -21,9 +21,9 @@
     <header class="header" id="home">
         <div class="header-top">
             <img src="/images/Logo.png" alt="Bose logo">
-            <a href="#menu">
+            <button type="button" class="open-menu js-open-menu">
                 <img src="/images/icons/Icon-Burger-menu.png" alt="Icon burger menu">
-            </a>
+            </button>
         </div>
         <div class="header-bottom">
             <img src="/images/Sound waves.png" alt="Sound waves">
@@ -31,17 +31,17 @@
         </div>
     </header>
 
-    <div class="menu" id="menu">
+    <div class="menu js-menu">
         <div class="menu-top">
             <img src="/images/Logo.png" alt="Bose logo">
-            <a href="#home">
+            <button type="button" class="close-menu js-close-menu">
                 <img src="/images/icons/Icon-Close.png" alt="Icon close">
-            </a>
+            </button>
         </div>
         <div>
-            <nav class="nav">
+            <nav class="nav js-nav">
                 <a href="#home" class="nav-list">Home</a>
-                <a href="#recommended" class="nav-list">recommended</a>
+                <a href="#recommended" class="nav-list js-close-menu">recommended</a>
                 <a href="#category" class="nav-list">Categories</a>
                 <a href="#how-to-buy" class="nav-list">How to buy</a>
             </nav>
@@ -130,7 +130,7 @@
     </main>
 
     <footer class="footer"></footer>
-
+    <script src="./java_script/index.js"></script>
 </body>
 
 </html>

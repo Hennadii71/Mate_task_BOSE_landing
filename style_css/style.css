@@ -54,6 +54,13 @@ body {
   justify-content: space-between;
 }
 
+.open-menu,
+.close-menu {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
 .title {
   margin-top: 40px;
   font-style: italic;
@@ -76,7 +83,11 @@ body {
   background-color: #e8eff9;
 }
 
-.menu:target {
+/* .menu:target {
+  transform: translateX(0%);
+} */
+
+.is-open {
   transform: translateX(0%);
 }
 

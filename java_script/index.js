@@ -13,6 +13,9 @@ refs.buttonCloseMenu.addEventListener("click", () =>
   refs.menu.classList.remove("is-open")
 );
 
-refs.navCloseMenu.addEventListener("click", () =>
-  refs.menu.classList.remove("is-open")
-);
+refs.navCloseMenu.addEventListener("click", () => {
+  if (event.target.nodeName !== "A") {
+    return;
+  }
+  refs.menu.classList.remove("is-open");
+});
